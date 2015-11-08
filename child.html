@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        var childVar = "这是子页面的变量";
+        function childFun(){
+            alert("这是子页面的方法");
+        }
+
+        function change(){
+            alert( parent.parentVar );
+            parent.changeStyle();
+        }
+    </script>
+</head>
+<body>
+    <a href="" id="tagB">这是子页面</a>
+    <input type="button" onclick="change()" value="获取父页面">
+</body>
+</html>
